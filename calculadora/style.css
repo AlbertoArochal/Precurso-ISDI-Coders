@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+.calculator {
+    width: 90%;
+    display: grid;
+    max-width: 400px;
+    min-width: 200px;
+    min-height: 400px;
+    background-color: black;
+    border: 2px solid #dadada;
+    border-radius: 7px;
+    margin: 80px auto;
+    overflow: hidden;
+    align-content: top;
+    align-items: center;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(2, auto);
+    box-shadow: 0 0 20px rgb(237, 6, 245);
+    background-image: url('https://c.tenor.com/1QE1cPvC-78AAAAC/glitter-stars.gif');
+    background-size: cover;
+
+
+
+}
+
+#button__equal{
+    background-color: blueviolet;
+    grid-column: span 2;
+    opacity: 0.7;
+    font-weight: 900;
+}
+.calculator__pad {
+    width: 90%;
+    height: 70%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    background: none;
+    gap: 0.2rem;
+}
+
+.calculator__button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    min-height: 50px;
+    font-size: larger;
+
+    text-align: center;
+
+}
+
+.calculator__button:hover {
+    color: white;
+    cursor: pointer;
+    font-size: xx-large;
+    text-shadow: 0 0 5px rgb(237, 6, 245);
+}
+
+
+
+.calculator__screen {
+    background-color: rgb(1, 33, 102);
+    width: 90%;
+    height: 90%;
+    min-height: 70px;
+    color: white;
+    border: white solid 2px;
+    align-self: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: right;
+    max-width: 400px;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding-right: 7px;
+    text-shadow: 0 0 5px rgb(237, 6, 245);
+
+
+
+}
+
+.calculator__button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 20px rgb(237, 6, 245);
+    opacity: 0.8;
+    text-shadow: 0 0 5px rgb(237, 6, 245);
+}
